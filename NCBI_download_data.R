@@ -44,7 +44,7 @@ null.to.other <-
 test1 = list()
 for (i in 1:nrow(BOT1)) {
   fetch2 <- entrez_fetch(db = "nucleotide", id = BOT1$ids[i], 
-                         rettype = "gbc", retmode="xml", parsed = TRUE, api_key = "682b572f36aa836509b75761d46ea690af08")  
+                         rettype = "gbc", retmode="xml", parsed = TRUE, api_key = api_key)  
   xmltop <- xmlRoot(fetch2)
   numseq <- length(xmltop)
   organism <- rep(NA,numseq)
