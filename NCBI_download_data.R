@@ -40,6 +40,7 @@ null.to.other <-
   }
 
 # Extract data from NCBI info for all BOT species
+#This function can be improved to be faster however right now I don't have time but it works!
 #BOT1
 test1 = list()
 for (i in 1:nrow(BOT1)) {
